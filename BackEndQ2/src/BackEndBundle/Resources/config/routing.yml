@@ -1,0 +1,10 @@
+back_end_travelplan:
+    resource: "@BackEndBundle/Resources/config/routing/travelplan.php"
+    prefix:   /travelplan
+    
+back_end_homepage:
+    path:     /
+    defaults: { _controller: BackEndBundle:Default:index }
+back_end_Show:
+    path:     /
+    defaults: { _controller: BackEndBundle:Default:show }

@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Travelplan</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ travelPlan.id }}</td>
+            </tr>
+            <tr>
+                <th>Institution</th>
+                <td>{{ travelPlan.institution }}</td>
+            </tr>
+            <tr>
+                <th>Venue</th>
+                <td>{{ travelPlan.venue }}</td>
+            </tr>
+            <tr>
+                <th>Daysaway</th>
+                <td>{{ travelPlan.daysAway }}</td>
+            </tr>
+            <tr>
+                <th>Justification</th>
+                <td>{{ travelPlan.justification }}</td>
+            </tr>
+            <tr>
+                <th>Estimatedtravelcostusd</th>
+                <td>{{ travelPlan.estimatedTravelCostUSD }}</td>
+            </tr>
+            <tr>
+                <th>Regionaloffice</th>
+                <td>{{ travelPlan.regionalOffice }}</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td>{% if travelPlan.status %}Yes{% else %}No{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('travelplan_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('travelplan_edit', { 'id': travelPlan.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

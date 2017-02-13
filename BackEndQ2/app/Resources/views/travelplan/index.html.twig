@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Travel Plans list</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Mission</th>
+                <th>Departement</th>
+                <th>Officer Name</th>
+                <th>Estimated Cost</th>
+               
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for travelPlan in travelPlans %}
+            <tr>
+              
+                <td>{{ travelPlan.institution }}</td>
+                <td>{{ travelPlan.regionalOffice }}</td>
+                <td>{{ travelPlan.regionalOffice }}</td>
+                <td>{{ travelPlan.estimatedTravelCostUSD }}</td>
+                
+
+                <td>{% if travelPlan.status %}Approuved   {% else %}Panding   {% endif %}</td>
+
+                <td>
+                    <ul>
+                      
+                            <a href="{{ path('travelplan_show', { 'id': travelPlan.id }) }}">Show</a>
+
+{#                            <a href="{{ path('travelplan_show', { 'id': travelPlan.id }) }}">{% if travelPlan.status %}Reject    {% else %} Approuved  {% endif %}</a>#}
+                       
+                   
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+   
+{% endblock %}
