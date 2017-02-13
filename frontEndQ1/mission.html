@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Plan </title>
+    
+	
+     <link rel="stylesheet" href="css/family_Titillium.css">
+	<link rel="stylesheet" href="css/family_Roboto.css">
+	<link rel="stylesheet" href="css/family_Raleway.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     
+    <!-- Font Awesome  -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+ 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script> 
+	$(function(){
+	$("#header").load("header.html"); 
+	$("#footer").load("footer.html"); 
+	});
+	</script>
+  </head>
+  <body>   
+     <div id="header"></div>
+    
+   
+    
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Mission Report </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                
+                
+                <div class="col-md-16">
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+                            
+
+                            
+					<center>
+                            <div class="woocommerce-info"><h4>MISSION REPORT</h4></div>
+					</center>
+					<form method="post" action="pdf/UN.php"> 
+					
+                        <center>
+							Name<input type="text" value=""  id="name" name="name" class="input-text required" required>
+						</center>
+                  </br></br>
+							Executive Board of the 
+							<select class="country_to_state country_select" id="departement" name="departement" required>
+										<option value="" selected="selected">Select a Departement</option>
+										<option value="Office for the Coordination of Humanitarian Affairs">Office for the Coordination of Humanitarian Affairs</option>
+										<option value="United Nations Office for Outer Space Affairs">United Nations Office for Outer Space Affairs</option>
+										<option value="International Seabed Authority">International Seabed Authority</option>
+										<option value="Comprehensive Nuclear-Test-Ban Treaty Organization">Comprehensive Nuclear-Test-Ban Treaty Organization</option>
+										<option value="Organisation for the Prohibition of Chemical Weapons">Organisation for the Prohibition of Chemical Weapons</option>
+							</select></br></br>
+							Mission date: 	<input type="date" name="missionDate" >&nbsp;&nbsp; Place<input type="text" name="place" required></br></br></br>
+							<center>
+								<h3>MISSION REPORT</h3></br>
+								Mission Title
+							<select class="country_to_state country_select" id="project" name="project" required>
+								<option value="" value="GB">Select a Project</option>
+								<option value="UDF-08-213-GLO">Global: Assessing Democracy Assistance (UDF-08-213-GLO)</option>
+								<option value="AF">Non-Governmental Diplomacy (UDF-08-214-GLO)</option>
+								<option value="UDF-09-281-GLO">Opening the Doors of Policy Making in Central Asia and South Caucasus (UDF-09-281-GLO)</option>
+								<option value="UDF-09-316-AFG">Citizens' Platform for Democratic Debates and  Dialogues  (UDF-09-316-AFG)</option>
+								<option value="UDF-07-201-ARG">Supporting Political Dialogue and Debate (UDF-07-201-ARG)</option>
+								<option value="UDF-07-173-AZE">Developing Democratic Electoral Processes (UDF-07-173-AZE)</option>
+								<option value="UDF-09-317-AZE">Creation of Women's Parliament (UDF-09-317-AZE)</option>
+								<option value="UDF-08-250-BGD">Active Citizens and Accountable Local Government (UDF-08-250-BGD)</option>
+								<option value="UDF-09-318-BGD">Promoting Good Governance Among Tribal Inhabitants (UDF-09-318-BGD)</option>                                               
+							</select>
+							</center>
+							<h3>Introduction:<h3> 
+							<textarea rows="4" cols="100" placeholder="Introduction..."  class="input-text " name="introduction" required></textarea></br>
+							
+							<h3>Mission Context:<h3>
+							<textarea rows="4" cols="100" placeholder="Mission Context..."  class="input-text " name="missionContext" required></textarea></br>
+							
+							<h3>Main questions asked during the Mission<h3>
+							<textarea rows="4" cols="100" placeholder="Main questions asked during the Mission..."  class="input-text " name="questions" required></textarea></br>
+							
+							<h3>Conclusion<h3>
+							<textarea rows="4" cols="100" placeholder="Conclusion..."  class="input-text " name="conclusion"required></textarea></br>
+							
+							<h3>Recommendations<h3>
+							<textarea rows="4" cols="100" placeholder="Recommendations..."  class="input-text " name="recommendations" required></textarea></br>
+							</br></br></br>
+							
+								<input type="submit" value="Create PDF File"> 
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+					
+    
+      
+     <!-- Latest jQuery form server -->
+    <script src="js/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS form CDN -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- jQuery sticky menu -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    
+    <!-- jQuery easing -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
